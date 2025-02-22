@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        .personal-info {
+            margin: 20px 35px;
+            display: flex;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+        }
+        .skills,
+        .experience {
+            margin: 20px 35px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        body {
+            background-color: rgb(4, 4, 66);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            background: linear-gradient(130deg, blue, black, red);
+
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            align-items: center;
+            text-decoration: none;
+            margin: 0 25px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            display: flex;
+            color: rgb(249, 248, 247);
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        .nav-link {
+            background: linear-gradient(130deg, #4c039a, #36027b 41.07%, #6e05b0 76.05%);
+            border-radius: 25px;
+            height: 40px;
+            width: 80px;
+
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(225, 22, 140);
+            font-size: 1.4rem;
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(128, 128, 176);
+            height: 1.9px;
+            margin: 35px 70px;
+
+
+        }
+
+
+        .left {
+            font-size: 3rem;
+            text-align: center;
+            margin-left: 50px;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 35%;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+
+
+        }
+
+        .leftsection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background: rgb(78, 41, 113);
+            color: white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightsection img {
+            width: 80%;
+            margin: 40px 0;
+
+        }
+
+        .yashu {
+            color: rgb(11, 215, 234);
+        }
+
+        #element {
+            color: rgb(11, 215, 234);
+        }
+
+        .secondsection {
+            width: 80%;
+            margin: 0 30px;
+
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 2rem;
+        }
+
+        .gray {
+            color: rgb(42, 9, 9);
+        }
+
+        .secondsection>div {
+            background: white;
+            width: 70vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+
+        }
+
+        .secondsection .vertical {
+            height: 90px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px
+        }
+
+        .image-top {
+            width: 30px;
+            position: relative;
+            top: -55px;
+            left: -9px;
+            height: 50px;
+        }
+
+        .vertical-title {
+
+            position: relative;
+            top: 35px;
+            width: 100px;
+            left: 1px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 50px;
+            color: gray;
+            width: 200px;
+            font-size: 10px;
+
+        }
+
+        footer {
+            background: linear-gradient(130deg, blue, black, red);
+
+
+        }
+        
+        .personal-info h2,
+        .skills h2,
+        .experience h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: rgb(11, 215, 234);
+        }
+
+        .skills ul {
+            list-style: disc;
+            margin-left: 20px;
+            font-size: 1.1rem;
+        }
+
+        .experience p {
+            font-size: 1.1rem;
+        }
+
+       .projectsSection {
+            margin: 30px 0;
+            display: grid;
+
+        }
+        .projectgrid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0px;
+
+        }
+
+        .projectimg {
+            height: 20px;
+        }
+
+        .project {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 35px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .project h2:hover {
+            font-size: 1.8rem;
+            color: wheat;
+
+        }
+
+        .project:hover {
+            background-color: rgba(9, 7, 95, 0);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .project h2 {
+            font-size: 1.5rem;
+            display: flex;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .project p {
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(23, 7, 132);
+            height: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Yashaswini B</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#firstsection" class="nav-link">Home</a></li>
+                    <li><a href="#aboutSection" class="nav-link">About</a></li>
+                    <li><a href="#projectsSection" class="nav-link">Project</a></li>
+                    <li><a href="#contactSection" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="firstsection" class="firstsection">
+            <div class="leftsection">
+                Hi,My name is<spam class="yashu">Yashaswini B</spam>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="YASHASWINI B (1).pdf" target="_blank"> <button class="btn">Download Resume</button></a>
+                   <!-- <button class="btn">Visit GitHub</button>-->
+                </div>
+            </div>
+            <div class="rightsection"><img src="yashu.webp" alt=""></div>
+        </section>
+        <hr>
+       
+        <section id="aboutSection" class="secondSection">
+            <h1 style="font-size: 1.9rem;margin-left: 20px;">About:</h1>
+
+            <div class="personal-info">
+               <!-- <div>
+                    <img class="mypic" style="height: 600px;margin:0 25px;" src="me.png" alt="my image">
+                </div>-->
+                <div class="about-right">
+                    <div>
+                        <h2>Personal Information</h2>
+                        <p>Name: Yashaswini B</p>
+                        <p>Email: yashaswinibk02@gmail.com</p>
+                        <p>Phone: +91 9606473379</p>
+                       <!-- <p>LinkedIn: <a href="https://www.linkedin.com/in/srinivas-g-a09920213/">Srinivas G LinkedIn</a>
+                        </p>-->
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Web Development</li>
+                    <li>Java Programming</li>
+                    <li>Cloud computing</li>
+                    <li>Android Studio</li>
+                </ul>
+            </div>
+            <!--<div class="experience">
+                <h2>Experience</h2>
+                <section class="secondsection">
+                    <span class="gray">What i done so far</span>
+        
+                    <h1>Work Experience :</h1>
+                    <div style="margin-left: 60px;" class="box">
+                        <div class="vertical">
+                            <img class="image-top" src="devaloper.png" alt="">
+                            <div class="vertical-title">
+                                HTML Developer [2010-2015]
+                            </div>
+                            <div class="vertical-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+                                praesentium ullam dolorem dolorum? Sequi iste quod totam, possimus ducimus accusamus
+                                necessitatibus vel commodi aut suscipit asperiores a officiis excepturi maiores.</div>
+                        </div>
+                        <div class="vertical">
+                            <img class="image-top" src="devaloper.png" alt="">
+                            <div class="vertical-title">
+                                HTML Developer [2010-2015]
+                            </div>
+                            <div class="vertical-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+                                praesentium ullam dolorem dolorum? Sequi iste quod totam, possimus ducimus accusamus
+                                necessitatibus vel commodi aut suscipit asperiores a officiis excepturi maiores.</div>
+        
+                        </div>
+                        <div class="vertical">
+                            <img class="image-top" src="devaloper.png" alt="">
+                            <div class="vertical-title">
+                                HTML Developer [2010-2015]
+                            </div>
+                            <div class="vertical-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+                                praesentium ullam dolorem dolorum? Sequi iste quod totam, possimus ducimus accusamus
+                                necessitatibus vel commodi aut suscipit asperiores a officiis excepturi maiores.</div>
+                        </div>
+                        <div class="vertical"><img class="image-top" src="devaloper.png" alt="">
+                            <div class="vertical-title">
+                                HTML Developer [2010-2015]
+                            </div>
+                            <div class="vertical-desc"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis
+                                praesentium ullam dolorem dolorum? Sequi iste quod totam, possimus ducimus accusamus
+                                necessitatibus vel commodi aut suscipit asperiores a officiis excepturi maiores.</div>
+                        </div>
+                    </div>-->
+        
+        
+                </section>
+                
+            </div>
+        </section>
+
+        <section class="thirdSection"></section>
+        <hr>
+
+        <section id="projectsSection" class="projectsSection">
+
+            <h1 style="font-size: 1.9rem; margin-left: 20px; height: 30px;width: fit-content;">Projects:</h1>
+            <section class="projectgrid">
+                <div class="project">
+                    <img style="display: block;height:270px;width: 100%;" src="boook.jpg" alt="jfd">
+                    <h2>Online book reselling</h2>
+                    <!--<p>This project is an online examination system built using HTML, CSS, SQL, and PHP. It allows users to
+                    take exams online and get instant results.</p>-->
+                </div>
+                <div class="project">
+                    <img style="display: block;height:270px;width: 70%; margin-left: 45px;" src="tic.png" alt="jfd">
+                    <h2>Tic-tac-toe</h2>
+                    <!--<p>This project is a mock code generator created using Android Studio. It generates mock code snippets
+                    for programming practice.</p>-->
+                </div>
+                <div class="project">
+                    <img style="display: block;height:270px;width: 100%;" src="atom.png" alt="jfd">
+                    <h2>Atom simulation</h2>
+                    <!--<p>This project is a bubble sort algorithm demonstration built using Computer Graphics. It visualizes
+                    the sorting process using CGV.</p>-->
+                </div>
+                <div class="project">
+                    <img style="display: block;height:270px;width: 100%;" src="calsi.jpg" alt="jfd">
+                    <h2>Web Calculator</h2>
+                    <!--<p>This project is a bubble sort algorithm demonstration built using Computer Graphics. It visualizes
+                    the sorting process using CGV.</p>-->
+                </div>
+                <div class="project">
+                    <img style="display: block;height:270px;width: 100%;" src="port.jpg" alt="jfd">
+                    <h2>Personal portfolio</h2>
+                    <!--<p>This project is a bubble sort algorithm demonstration built using Computer Graphics. It visualizes
+                    the sorting process using CGV.</p>-->
+                </div>
+            </section>
+        </section>
+        <hr>
+        <section id="contactSection" class="resume">
+            <h1 style="font-size: 1.9rem;margin-left: 20px;">
+                My Resume:
+            </h1>
+            <figure>
+                <a href="YASHASWINI B (1).pdf" target="_blank"><img
+                        style="display: flex; justify-content: center; width: 110px; margin: auto; " src="resume.png"
+                        alt="resume">
+                    <figcaption
+                        style="display:flex;justify-content: center;align-items: center;font-size: 30px;color: aliceblue;text-decoration: none; margin: 0 28rem;">
+                        Click here to view my resume</figcaption>
+                </a>
+            </figure>
+            <hr>
+            <section>
+                <h1 style="font-size: 1.9rem;margin-left: 20px;">
+                    Contact:
+                </h1>
+                <div style="text-align: center; margin-bottom: 60px;">
+                    <h3> Email: yashawinibk02@gamil.com</h3>
+                    <h3>Phone: +91 8970188840</h3>
+                    <!--<a href=https://www.linkedin.com/in/srinivas-g-a09920213/ target="_blank"
+                        style="color: white;">linkdin</a>-->
+                    <div style="display: flex;justify-content:space-evenly ;align-items: center; ">
+
+                        <a href=https://wa.me/+918970188840 target="_blank"><i class="fa fa-whatsapp"
+                                style="color: rgb(3, 121, 9);font-size: 4rem;width: 20%;margin-right: 35px;"></i></a>
+                        <a href=https://www.instagram.com/yashaswini._b?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D
+                            target="_blank"><i class="fa fa-instagram"
+                                style="color: rgb(158, 4, 122);font-size: 4rem;width: 20%;margin-left: 30px;"></i></a>
+
+                    </div>
+                    <div style="display: flex;justify-content:space-evenly ;align-items: center;">
+                        <h3>&nbsp;click on icon to chat</h3>
+                        <h3 style="margin-left: 26px;">click here to follow</h3>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="footer">
+
+        </div>
+        <div class="footer-rights">
+            Copyright &copy;yashaswinib
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var typed = new Typed('#element', {
+                strings: ['Web developer', 'Graphic designer'], // Use 'strings' instead of 'string'
+                typeSpeed: 50, // Use 'typeSpeed' instead of 'typespeed'
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
